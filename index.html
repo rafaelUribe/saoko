@@ -11,6 +11,16 @@
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="./style.css" />
 </head>
+<script>
+    const alertSaoko = () => {
+        alert("saoko papi saoko")
+    }
+    const colorTitulo = () => {
+        const generationSpan = document.getElementById("generation")
+        alert("triggered")
+        generationSpan.style.color = "red"
+    }
+</script>
 
 <body>
     <!-- Navbar -->
@@ -62,8 +72,8 @@
     </nav>
     <!-- Description -->
     <div class="container">
-      <h1>Estar en Generation está cool</h1>
       <div class="row">
+        <h1>Estar en <span id="generation">Generation </span>está cool</h1>
         <div class="col">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
@@ -71,10 +81,12 @@
             doloremque vitae impedit, nisi iusto numquam rerum sequi possimus
             aut ea odio autem!
           </p>
-          <p>Este es otro parrafo</p>
-          <p>
-            <a href="https://mexico.generation.org/" class="btn btn-success"
-              >Visita Generation por favor</a
+          <section>
+            New thing
+          </section>
+          <p onclick="colorTitulo()">
+            <a href="#" class="btn btn-success"
+              >Visita Generation</a
             >
           </p>
         </div>
