@@ -11,16 +11,6 @@
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="./style.css" />
 </head>
-<script>
-    const alertSaoko = () => {
-        alert("saoko papi saoko")
-    }
-    const colorTitulo = () => {
-        const generationSpan = document.getElementById("generation")
-        alert("triggered")
-        generationSpan.style.color = "red"
-    }
-</script>
 
 <body>
     <!-- Navbar -->
@@ -53,15 +43,15 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Generation</a
-              >
+                          >
             </li>
           </ul>
           <form class="d-flex">
             <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
             />
             <button class="btn btn-outline-success" type="submit">
               Search
@@ -81,12 +71,9 @@
             doloremque vitae impedit, nisi iusto numquam rerum sequi possimus
             aut ea odio autem!
           </p>
-          <section>
-            New thing
-          </section>
           <p onclick="colorTitulo()">
             <a href="#" class="btn btn-success"
-              >Visita Generation</a
+            >Visita Generation</a
             >
           </p>
         </div>
@@ -104,9 +91,9 @@
           </p>
           <p>
             <a
-              href="https://developer.mozilla.org/es/docs/Learn/HTML"
-              class="btn btn-success"
-              >Aprende más sobre HTML</a
+            href="https://developer.mozilla.org/es/docs/Learn/HTML"
+            class="btn btn-success"
+            >Aprende más sobre HTML</a
             >
           </p>
         </div>
@@ -120,9 +107,9 @@
           </p>
           <p>
             <a
-              href="https://developer.mozilla.org/es/docs/Learn/CSS"
-              class="btn btn-success"
-              >Aprende más sobre CSS</a
+            href="https://developer.mozilla.org/es/docs/Learn/CSS"
+            class="btn btn-success"
+            >Aprende más sobre CSS</a
             >
           </p>
         </div>
@@ -136,9 +123,9 @@
           </p>
           <p>
             <a
-              href="https://developer.mozilla.org/es/docs/Learn/JavaScript"
-              class="btn btn-success"
-              >Aprende más sobre JAVASCRIPT</a
+            href="https://developer.mozilla.org/es/docs/Learn/JavaScript"
+            class="btn btn-success"
+            >Aprende más sobre JAVASCRIPT</a
             >
           </p>
         </div>
@@ -160,5 +147,15 @@
         <!-- JS de bootstrap -->
         <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
+<script>
+    const alertSaoko = () => {
+        alert("saoko papi saoko")
+    }
+    const generationSpan = document.getElementById("generation").style.color = 'grey';
+    const colorTitulo = () => {
+        const generationSpan = document.getElementById("generation")
+        generationSpan.style.color = "red"
+    }
+</script>
 
 </html>
