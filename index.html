@@ -43,15 +43,15 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Generation</a
-                          >
+              >
             </li>
           </ul>
           <form class="d-flex">
             <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
             />
             <button class="btn btn-outline-success" type="submit">
               Search
@@ -62,7 +62,7 @@
     </nav>
     <!-- Description -->
     <div class="container">
-      <div class="row">
+      <div class="row my-3">
         <h1>Estar en <span id="generation">Generation </span>está cool</h1>
         <div class="col">
           <p>
@@ -72,28 +72,56 @@
             aut ea odio autem!
           </p>
           <p onclick="colorTitulo()">
-            <a href="#" class="btn btn-success"
-            >Visita Generation</a
-            >
-          </p>
+            <a href="#" class="btn btn-success">Visita Generation</a>
+                        </p>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h2>HTML</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-            placeat voluptatibus fugit sed? Aliquam, voluptas sint. Nihil iusto
-            minima in ab saepe! Quisquam vero ipsam rerum excepturi nostrum
-            error consequatur!
-          </p>
-          <p>
-            <a
-            href="https://developer.mozilla.org/es/docs/Learn/HTML"
-            class="btn btn-success"
-            >Aprende más sobre HTML</a
+        </div>
+        <div class="container">
+            <!-- Descripción Generation -->
+            <div class="row"></div>
+            <!-- Carousel Cholos -->
+            <div class="row my-4">
+                <div class="col">
+                    <div id="carouselExampleControls" class="carousel slide interval" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/1.png" class="d-block w-100" alt="cholazos" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/2.png" class="d-block w-100" alt="cholitos" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/3.png" class="d-block w-100" alt="choliza" />
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-4">
+                    <h2>HTML</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde placeat voluptatibus fugit sed? Aliquam, voluptas sint. Nihil iusto minima in ab saepe! Quisquam vero ipsam rerum excepturi nostrum error consequatur!
+                    </p>
+                    <p>
+                        <a href="https://developer.mozilla.org/es/docs/Learn/HTML" class="btn btn-success">Aprende más sobre HTML</a
             >
           </p>
         </div>
@@ -107,9 +135,9 @@
           </p>
           <p>
             <a
-            href="https://developer.mozilla.org/es/docs/Learn/CSS"
-            class="btn btn-success"
-            >Aprende más sobre CSS</a
+              href="https://developer.mozilla.org/es/docs/Learn/CSS"
+              class="btn btn-success"
+              >Aprende más sobre CSS</a
             >
           </p>
         </div>
@@ -123,14 +151,15 @@
           </p>
           <p>
             <a
-            href="https://developer.mozilla.org/es/docs/Learn/JavaScript"
-            class="btn btn-success"
-            >Aprende más sobre JAVASCRIPT</a
+              href="https://developer.mozilla.org/es/docs/Learn/JavaScript"
+              class="btn btn-success"
+              >Aprende más sobre JAVASCRIPT</a
             >
           </p>
         </div>
       </div>
     </div>
+
     <hr />
     <footer class="container">
       <div class="row">
@@ -141,21 +170,22 @@
           <a href="#" target="_blank">Términos y condiciones</a>
                         <span>|</span>
                         <a href="#" target="_blank">Políticas de privacidad</a>
+                </div>
             </div>
-        </div>
-        </footer>
-        <!-- JS de bootstrap -->
-        <script src="./js/bootstrap.bundle.min.js"></script>
+            </footer>
+            <!-- JS de bootstrap -->
+            <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 <script>
     const alertSaoko = () => {
-        alert("saoko papi saoko")
-    }
-    const generationSpan = document.getElementById("generation").style.color = 'grey';
+        alert("saoko papi saoko");
+    };
+    const generationSpan = (document.getElementById("generation").style.color =
+        "grey");
     const colorTitulo = () => {
-        const generationSpan = document.getElementById("generation")
-        generationSpan.style.color = "red"
-    }
+        const generationSpan = document.getElementById("generation");
+        generationSpan.style.color = "red";
+    };
 </script>
 
 </html>
